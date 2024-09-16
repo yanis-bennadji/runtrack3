@@ -24,7 +24,7 @@ document.getElementById('filterButton').addEventListener('click', function () {
 // Fonction pour afficher les pokémons
 function displayPokemon(pokemonList) {
     const pokemonContainer = document.getElementById('pokemonList');
-    pokemonContainer.innerHTML = ''; // Efface les résultats précédents
+    pokemonContainer.innerHTML = ''; 
 
     if (pokemonList.length === 0) {
         pokemonContainer.innerHTML = '<p>Aucun Pokémon trouvé</p>';
@@ -36,7 +36,13 @@ function displayPokemon(pokemonList) {
         pokemonElement.innerHTML = `
             <h3>${pokemon.name.french} (#${pokemon.id})</h3>
             <p>Type: ${pokemon.type.join(', ')}</p>
-            <p>HP: ${pokemon.base.HP}</p>
+            <p>HP: ${pokemon.base.HP}</p>   
+            <p>Attack: ${pokemon.base.Attack}</p>
+            <p>Defense: ${pokemon.base.Defense}</p>
+            <p>Sp.Attack: ${pokemon.base.SpAttack}</p>
+            <p>Sp.Defense: ${pokemon.base.SpDefense}</p>
+            <p>Speed: ${pokemon.base.Speed}</p>
+
         `;
         pokemonContainer.appendChild(pokemonElement);
     });
