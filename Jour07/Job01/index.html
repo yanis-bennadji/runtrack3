@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">La Plateforme</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.html">Inscription</a></li>
+                <li><a href="index.html">Connexion</a></li>
+                <li><a href="index.html">Rechercher</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="container">
+        <h2>Formulaire d'inscription</h2>
+        <form>
+            <!-- Civilité -->
+
+            <div class="row">
+                <div class="col s12">
+                    <label>Civilité</label>
+                    <p>
+                        <label>
+                            <input name="civility" type="radio" value="Mr" />
+                            <span>Mr</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input name="civility" type="radio" value="Mrs" />
+                            <span>Mrs</span>
+                        </label>
+                    </p>
+                </div>
+            </div>
+            <!-- Prénom -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="first_name" type="text" class="validate">
+                    <label for="first_name">Prénom</label>
+                </div>
+            </div>
+            <!-- Nom -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="last_name" type="text" class="validate">
+                    <label for="last_name">Nom</label>
+                </div>
+            </div>
+            <!-- Adresse -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="mail" type="email" class="validate">
+                    <label for="mail">Mail</label>
+                </div>
+            </div>
+            <!-- Email -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="email" type="email" class="validate">
+                    <label for="email">Email</label>
+                </div>
+            </div>
+            <!-- Mot de passe -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="password" type="password" class="validate">
+                    <label for="password">Mot de passe</label>
+                </div>
+            </div>
+            <!-- Validation du mot de passe -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="password_confirm" type="password" class="validate">
+                    <label for="password_confirm">Confirmer le mot de passe</label>
+                </div>
+            </div>
+            <!-- Passions -->
+            <div class="row">
+                <div class="col s12">
+                    <label>Passions</label>
+                    <p>
+                        <label>
+                            <input type="checkbox" />
+                            <span>Informatique</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" />
+                            <span>Voyages</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" />
+                            <span>Sport</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" />
+                            <span>Lecture</span>
+                        </label>
+                    </p>
+                </div>
+            </div>
+            <!-- Submit Button -->
+            <div class="row">
+                <div class="col s12">
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Valider
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</main>
+
+<footer>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Materialize</h5>
+                    <p class="grey-text text-lighten-4">J'ai fais ce footer avec Materialize.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Lien</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="index.html">Accueil</a></li>
+                        <li><a class="grey-text text-lighten-3" href="index.html">Inscription</a></li>
+                        <li><a class="grey-text text-lighten-3" href="index.html">Connexion</a></li>
+                        <li><a class="grey-text text-lighten-3" href="index.html">Rechercher</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2014 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="index.html">More Links</a>
+            </div>
+        </div>
+    </footer>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
